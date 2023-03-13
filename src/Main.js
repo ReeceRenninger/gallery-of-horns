@@ -1,13 +1,14 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-import Footer from './Footer';
+
 
 class Main extends React.Component {
   render(){
    return(
     <>
-     <HornedBeast titleOne = "First Image" descriptionOne = "First image description"/>
-     <HornedBeast titleTwo = "Second Image" descriptionTwo ="Second image description"/>
+     <HornedBeast title = "Dried Out Skeleton Horns" imageUrl= "https://unsplash.com/photos/o4Biw__r7Is" description = "dried out bone skeleton horns"/>
+
+     <HornedBeast title = "Decorative Bull Horns" imageUrl="https://unsplash.com/photos/laKhQkxwoVE" description ="gold skull with designs and black horns"/>
   {/* <Hornedbeast title="" description="" imageurl=""/> */}
   </>
    )
