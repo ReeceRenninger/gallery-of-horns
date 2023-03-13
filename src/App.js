@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// REBUILD AS A CLASS COMPONENT
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//1st Bring in our imports
+import React from 'react';
+import Header from './Header';
+import Main from './Main';
+
+//2nd Create the CLASS - will always have a RENDER method
+class App extends React.Component {
+  render() {
+    return (
+      // <></> is a fragment that can be used to return MULTIPLE children as a blank parent
+      <> 
+        <Header />
+        <Main />
+      </>
+    )
+  }
 }
 
+//3rd We export our created class for other files to import
 export default App;
