@@ -4,6 +4,7 @@
 import React from 'react';
 import Header from './Header';
 import Main from './Main';
+import Footer from './Footer';
 
 //2nd Create the CLASS - will always have a RENDER method
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
       <> 
         <Header />
         <Main />
+        <Footer/>
       </>
     )
   }
