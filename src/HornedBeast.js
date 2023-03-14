@@ -40,6 +40,7 @@ class HornedBeast extends React.Component {
         <Card.Img src={this.props.image_url} alt={this.props.description}/>
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
+        <Card.Text>{this.props.description}</Card.Text>
         <Button variant="info" onClick={this.handleLikes}>Favorite</Button>
         <p>{this.state.likes} 🖤 Likes!</p>
         {/* <Button variant="danger" onClick={this.needsHelp}>Help!</Button>
