@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# The Fantastic Gallery of Horns Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Feature Notes
 
-## Available Scripts
+#### Feature One: Display Images
 
-In the project directory, you can run:
+- Estimate of time needed to complete: ~15 to 30 minutes
 
-### `npm start`
+- Start time: 12:10
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Finish time: 12:25
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Actual time needed to complete: 15 minutes
 
-### `npm test`
+#### Feature Two: Allow users to Favorite Individual Beasts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Estimate of time needed to complete: ~10 to 15 minutes
 
-### `npm run build`
+- Start time: 12:30
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Finish time: 12:40
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Actual time needed to complete: 10 minutes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Feature Three: Bootstrap
 
-### `npm run eject`
+- Estimate of time needed to complete: ~30 to 60 minutes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Start time: 12:45
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Finish time: 1:35
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Actual time needed to complete: 50 minutes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author: Reece Renninger

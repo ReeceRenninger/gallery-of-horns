@@ -2,4 +2,5 @@
 .card-img{
   height: 448px;
   width: 448px;
+  border: 1px solid black;
 }
