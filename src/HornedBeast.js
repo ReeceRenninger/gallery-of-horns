@@ -1,7 +1,7 @@
 import React from 'react';
-//
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './HornedBeast.css'
 
 class HornedBeast extends React.Component {
   //constructor with props as parameter and super props is the TEMPLATE FOR STATE TO HAPPEN
@@ -37,14 +37,16 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <Card style={{ width: '28rem' }}>
-        <h2>{this.props.title}</h2>
         <p>{this.state.likes} 🖤 Likes!</p>
-        <Button onClick={this.handleLikes}>Favorite</Button>
-        <img src={this.props.image_url} alt={this.props.description}></img>
-        <Button variant="danger" onClick={this.needsHelp}>Help!</Button>
+        <Card.Img src={this.props.image_url} alt={this.props.description}/>
+        <Card.Body>
+        <Card.Title>{this.props.title}</Card.Title>
+        <Button variant="info" onClick={this.handleLikes}>Favorite</Button>
+        {/* <Button variant="danger" onClick={this.needsHelp}>Help!</Button>
         <Button variant="success" onClick={this.gotHelp}>I got help!</Button>
-        <div>{this.state.helpMe ? 'I NEED HELP!!!' : ''}</div>
-        </Card>
+        <div>{this.state.helpMe ? 'I NEED HELP!!!' : ''}</div> */}
+        </Card.Body>
+      </Card>
     );
   }
 }
