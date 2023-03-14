@@ -1,8 +1,8 @@
 # The Fantastic Gallery of Horns Project
 
-### Feature Notes
+## Feature Notes
 
-#### Feature One: Display Images
+### Feature One: Display Images
 
 - Estimate of time needed to complete: ~15 to 30 minutes
 
@@ -12,7 +12,7 @@
 
 - Actual time needed to complete: 15 minutes
 
-#### Feature Two: Allow users to Favorite Individual Beasts
+### Feature Two: Allow users to Favorite Individual Beasts
 
 - Estimate of time needed to complete: ~10 to 15 minutes
 
@@ -22,7 +22,7 @@
 
 - Actual time needed to complete: 10 minutes
 
-#### Feature Three: Bootstrap
+### Feature Three: Bootstrap
 
 - Estimate of time needed to complete: ~30 to 60 minutes
 
