@@ -36,14 +36,15 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <section>
+      <Card style={{ width: '28rem' }}>
         <h2>{this.props.title}</h2>
-        <p>{this.state.likes} Likes!</p>
+        <p>{this.state.likes} 🖤 Likes!</p>
+        <Button onClick={this.handleLikes}>Favorite</Button>
         <img src={this.props.image_url} alt={this.props.description}></img>
-        <Button onClick={this.needsHelp}>Help!</Button>
-        <Button onClick={this.gotHelp}>I got help!</Button>
+        <Button variant="danger" onClick={this.needsHelp}>Help!</Button>
+        <Button variant="success" onClick={this.gotHelp}>I got help!</Button>
         <div>{this.state.helpMe ? 'I NEED HELP!!!' : ''}</div>
-      </section>
+        </Card>
     );
   }
 }

@@ -1,4 +1,7 @@
-section {
+main {
   display: flex;
   flex-wrap: wrap;
+}
+
+img{
 }
