@@ -34,13 +34,18 @@ class HornedBeast extends React.Component {
       helpMe: false
     })
   }
+  // CANT EVER INVOKE ON A ONCLICK SO YOU MUST CREATE A HELPER FUNCTION TO CALL IT
+  // handler that calls open modal and requires an argument
+handleNameClick = () => {
+  this.props.handleOpenModal(this.props.title)
+}
 
   render() {
     return (
       <Card style={{ width: '28rem' }}>
         <Card.Img onClick={this.props.addHearts} src={this.props.image_url} alt={this.props.description}/>
         <Card.Body>
-        <Card.Title>{this.props.title}</Card.Title>
+        <Card.Title onClick={this.handleNameClick}>{this.props.title}</Card.Title>
         <Card.Text>{this.props.description}</Card.Text>
         <Button variant="info" onClick={this.handleLikes} >Favorite</Button>
         <p>{this.state.likes} 🖤 Likes!</p>
