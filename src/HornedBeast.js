@@ -23,29 +23,30 @@ class HornedBeast extends React.Component {
   }
 
   // METHOD TO UPDATE STATE OF HELPME -> this will change helpMe to true if invoked
-  needsHelp = () => {
-    this.setState({
-      helpMe: true
-    })
-  }
+  // needsHelp = () => {
+  //   this.setState({
+  //     helpMe: true
+  //   })
+  // }
 
-  gotHelp = () => {
-    this.setState({
-      helpMe: false
-    })
-  }
+  // gotHelp = () => {
+  //   this.setState({
+  //     helpMe: false
+  //   })
+  // }
+
   // CANT EVER INVOKE ON A ONCLICK SO YOU MUST CREATE A HELPER FUNCTION TO CALL IT
   // handler that calls open modal and requires an argument
-handleNameClick = () => {
-  this.props.handleOpenModal(this.props.title)
+handleImgClick = () => {
+  this.props.handleOpenModal(this.props.description)
 }
 
   render() {
     return (
       <Card style={{ width: '28rem' }}>
-        <Card.Img onClick={this.props.addHearts} src={this.props.image_url} alt={this.props.description}/>
+        <Card.Img onClick={this.handleImgClick} src={this.props.image_url} alt={this.props.description}/>
         <Card.Body>
-        <Card.Title onClick={this.handleNameClick}>{this.props.title}</Card.Title>
+        <Card.Title onClick={this.props.addHearts}>{this.props.title}</Card.Title>
         <Card.Text>{this.props.description}</Card.Text>
         <Button variant="info" onClick={this.handleLikes} >Favorite</Button>
         <p>{this.state.likes} 🖤 Likes!</p>

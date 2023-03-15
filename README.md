@@ -36,7 +36,7 @@
 
 - Estimate of time needed to complete: 60 to 120 minutes
 
-- Start time: 1300
+- Start time: 12:40
 
 - Finish time:
 

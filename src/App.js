@@ -6,7 +6,6 @@ import Header from './Header';
 import SelectedBeast from './SelectedBeast' // modal component
 import Main from './Main';
 import Footer from './Footer';
-import Modal from 'react-bootstrap/Modal'
 import data from './data/data.json';
 
 //2nd Create the CLASS - will always have a RENDER method
@@ -17,7 +16,8 @@ class App extends React.Component {
     this.state = {
       hearts: '',
       showModal: false,
-      selectedBeast: ''
+      selectedBeastImg: '',
+      selectedBeastDes: ''
       //either have modal grab just img and description or object
     }
   }
@@ -34,14 +34,12 @@ handleCloseModal = () => {
   })
 }
 
-handleOpenModal = (title) => {
+handleOpenModal = (img, description) => {
   this.setState ({
     showModal: true,
-    selectedBeast: title
+    selectedBeast: description
   })
 }
-
-
 
   render() {
     return (
@@ -49,12 +47,8 @@ handleOpenModal = (title) => {
       <> 
         <Header hearts={this.state.hearts}/>
         <Main addHearts={this.addHearts} handleOpenModal={this.handleOpenModal} data={data}/>
-        {/* <SelectedBeast/> */}
-        <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
-        <Modal.Header closeButton>{this.state.selectedBeast}
+        <SelectedBeast />
         
-        </Modal.Header>
-        </Modal>
         <Footer/>
       </>
     )
