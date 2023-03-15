@@ -1,5 +1,3 @@
-// REBUILD AS A CLASS COMPONENT
-
 //1st Bring in our imports
 import React from 'react';
 import Header from './Header';
@@ -37,17 +35,26 @@ handleCloseModal = () => {
 handleOpenModal = (img, description) => {
   this.setState ({
     showModal: true,
-    selectedBeast: description
+    selectedBeastImg: img,
+    selectedBeastDes: description
   })
 }
 
   render() {
     return (
-      // <></> is a fragment that can be used to return MULTIPLE children as a blank parent
       <> 
         <Header hearts={this.state.hearts}/>
-        <Main addHearts={this.addHearts} handleOpenModal={this.handleOpenModal} data={data}/>
-        <SelectedBeast />
+        <Main 
+        addHearts={this.addHearts} 
+        handleOpenModal={this.handleOpenModal} 
+        data={data}
+        />
+        <SelectedBeast 
+        showModal={this.state.showModal} 
+        handleCloseModal={this.handleCloseModal}
+        selectedBeastDes={this.state.selectedBeastDes} 
+        selectedBeastImg={this.state.selectedBeastImg}
+        />
         
         <Footer/>
       </>

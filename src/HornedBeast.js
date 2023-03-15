@@ -38,7 +38,7 @@ class HornedBeast extends React.Component {
   // CANT EVER INVOKE ON A ONCLICK SO YOU MUST CREATE A HELPER FUNCTION TO CALL IT
   // handler that calls open modal and requires an argument
 handleImgClick = () => {
-  this.props.handleOpenModal(this.props.description)
+  this.props.handleOpenModal(this.props.image_url, this.props.description)
 }
 
   render() {

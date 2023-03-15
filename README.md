@@ -38,8 +38,8 @@
 
 - Start time: 12:40
 
-- Finish time:
+- Finish time: 14:30
 
-- Actual time needed to complete:
+- Actual time needed to complete: 110 minutes / 1 hour and 50 minutes
 
 ## Author: Reece Renninger
