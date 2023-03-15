@@ -28,8 +28,18 @@
 
 - Start time: 12:45
 
-- Finish time: 1:35
+- Finish time: 13:35
 
 - Actual time needed to complete: 50 minutes
+
+### Feature Four: Display a Modal
+
+- Estimate of time needed to complete: 60 to 120 minutes
+
+- Start time: 12:40
+
+- Finish time: 14:30
+
+- Actual time needed to complete: 110 minutes / 1 hour and 50 minutes
 
 ## Author: Reece Renninger
