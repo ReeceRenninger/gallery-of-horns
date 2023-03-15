@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './HornedBeast.css'
 
+
 class HornedBeast extends React.Component {
   //constructor with props as parameter and super props is the TEMPLATE FOR STATE TO HAPPEN
   constructor(props) {
@@ -37,7 +38,7 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <Card style={{ width: '28rem' }}>
-        <Card.Img src={this.props.image_url} alt={this.props.description}/>
+        <Card.Img onClick={this.props.addHearts} src={this.props.image_url} alt={this.props.description}/>
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>{this.props.description}</Card.Text>

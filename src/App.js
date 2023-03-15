@@ -18,7 +18,7 @@ class App extends React.Component {
   // METHOD TO CHANGE STATE OF HEART ABOVE
 addHearts = () => {
   this.setState({
-    hearts: 'test'
+    hearts: this.state.hearts + '😍'
   })
 }
 
@@ -27,7 +27,7 @@ addHearts = () => {
       // <></> is a fragment that can be used to return MULTIPLE children as a blank parent
       <> 
         <Header hearts={this.state.hearts}/>
-        <Main onClick={this.addHearts}/>
+        <Main addHearts={this.addHearts}/>
         <Footer/>
       </>
     )
