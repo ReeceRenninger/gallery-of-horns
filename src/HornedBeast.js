@@ -41,7 +41,7 @@ class HornedBeast extends React.Component {
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>{this.props.description}</Card.Text>
-        <Button variant="info" onClick={this.handleLikes}>Favorite</Button>
+        <Button variant="info" onClick={this.handleLikes} >Favorite</Button>
         <p>{this.state.likes} 🖤 Likes!</p>
         {/* <Button variant="danger" onClick={this.needsHelp}>Help!</Button>
         <Button variant="success" onClick={this.gotHelp}>I got help!</Button>
