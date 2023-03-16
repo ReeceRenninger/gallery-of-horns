@@ -5,7 +5,6 @@ h1 {
   width: fit-content;
   margin: auto;
   background-clip: text; 
-  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   animation: wave 2000ms ease alternate infinite;
         transition: all 0.4s ease;
