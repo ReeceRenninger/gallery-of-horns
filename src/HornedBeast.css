@@ -1,11 +1,21 @@
-.card-img{
+.card-img {
   height: 448px;
   width: 448px;
   border: 1px solid black;
 }
 
-.btn-info{
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.btn-info {
+  text-align: center;
+}
+
+.form-select {
+  width: fit-content !important;
+  margin: auto !important;
+
+}
+
+.form-select:hover {
+  color: red;
+  background-color: yellow;
+  background-size: 0 3px, 100% 3px;
 }

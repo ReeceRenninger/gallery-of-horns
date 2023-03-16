@@ -1,4 +1,18 @@
 h1 {
   text-align: center;
-  color: rgb(3,26,142);
+  background: 
+  radial-gradient(circle, rgba(0,36,0,1) 0%, rgba(9,74,121,0.9429972672662815) 35%, rgba(255,0,24,1) 100%);
+  width: fit-content;
+  margin: auto;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: wave 2000ms ease alternate infinite;
+        transition: all 0.4s ease;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
 }
