@@ -42,4 +42,14 @@
 
 - Actual time needed to complete: 110 minutes / 1 hour and 50 minutes
 
+### Feature Five: Filter by Number of Horns
+
+- Estimate of time needed to complete: 30 to 60 minutes
+
+- Start time: 12:00
+
+- Finish time: 13:15
+
+- Actual time needed to complete: 75 minutes
+
 ## Author: Reece Renninger
