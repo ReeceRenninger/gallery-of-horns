@@ -3,3 +3,9 @@
   width: 448px;
   border: 1px solid black;
 }
+
+.btn-info{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
