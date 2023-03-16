@@ -11,7 +11,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hearts: '',
+      unicorn: '',
+      rhino: '',
       showModal: false,
       selectedBeastImg: '',
       selectedBeastDes: '',
@@ -21,9 +22,10 @@ class App extends React.Component {
     }
   }
   // METHOD TO CHANGE STATE OF HEART ABOVE
-  addHearts = () => {
+  addEmojis = () => {
     this.setState({
-      hearts: this.state.hearts + '😍'
+      unicorn: this.state.unicorn + '🦄',
+      rhino: this.state.rhino + '🦏'
     })
   }
 
@@ -66,6 +68,11 @@ class App extends React.Component {
       this.setState({
         data: hornData
       })
+    } else {
+      let hornData = data.filter(h => h.horns >= 1)
+      this.setState({
+        data: hornData
+      })
     }
     console.log(selectedHorns);
   }
@@ -74,12 +81,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header hearts={this.state.hearts} />
+        <Header 
+        unicorn={this.state.unicorn} 
+        rhino={this.state.rhino}
+        />
 
         <Form onInput={this.submitHandler}>
           <Form.Group >
             <Form.Select name='select' onChange={this.handleSelect}>
-              <option value="">Select beasts by how many horns they have here!</option>
+              <option value="">View Beasts by Horn(s) Amount!</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
@@ -89,7 +99,7 @@ class App extends React.Component {
         </Form>
 
         <Main
-          addHearts={this.addHearts}
+          addHearts={this.addEmojis}
           handleOpenModal={this.handleOpenModal}
           data={this.state.data} // had to update this to this.state.data to allow data to be updated based off change in form value and method running to filter
         />
