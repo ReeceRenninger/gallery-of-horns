@@ -16,7 +16,7 @@ class App extends React.Component {
       selectedBeastImg: '',
       selectedBeastDes: '',
       hornAmount: '',
-      sortedData: data
+      data: data
       //either have modal grab just img and description or object
     }
   }
@@ -43,22 +43,28 @@ class App extends React.Component {
   // need to update main with new information to show based off input
   handleSelect = (event) => {
     let selectedHorns = event.target.value;
-    if(selectedHorns === 2){
+    if(selectedHorns === '1'){
+      let hornData = data.filter(h => h.horns === 1)
+      this.setState({
+        data:hornData
+      })
+    }
+    else if(selectedHorns === '2'){
       let hornData = data.filter(h => h.horns === 2)
       this.setState({
         data: hornData
       })
     } 
-    else if(selectedHorns === 3){
+    else if(selectedHorns === '3'){
       let hornData = data.filter(h => h.horns === 3)
         this.setState({
           data: hornData
         })
       } 
-    else if(selectedHorns === 100){
+    else if(selectedHorns === '100'){
       let hornData = data.filter(h => h.horns === 100)
       this.setState({
-        data:hornData
+        data: hornData
       })
     }
     console.log(selectedHorns);
@@ -72,7 +78,7 @@ class App extends React.Component {
 
         <Form onInput={this.submitHandler}>
           <Form.Group >
-            <Form.Select name='horn-selection' onChange={this.handleSelect}>
+            <Form.Select name='select' onChange={this.handleSelect}>
               <option value="">Select beasts by how many horns they have here!</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -83,10 +89,9 @@ class App extends React.Component {
         </Form>
 
         <Main
-          handleSelect={this.handleSelect}
           addHearts={this.addHearts}
           handleOpenModal={this.handleOpenModal}
-          data={data}
+          data={this.state.data} // had to update this to this.state.data to allow data to be updated based off change in form value and method running to filter
         />
 
         <SelectedBeast

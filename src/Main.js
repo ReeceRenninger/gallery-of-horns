@@ -4,11 +4,6 @@ import './main.css'
 
 
 class Main extends React.Component {
-  //helper function to render 
-  displayNumHorns = () => {
-    this.props.handleSelect()
-  }
-
 
   render() {
     return (
